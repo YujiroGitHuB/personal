@@ -1,0 +1,380 @@
+body {
+    background: linear-gradient(54deg, #f31605, #af1194, #8529d7, #b010a4, #d732e8);
+    background-size: 300% 300%;
+    animation: gradient-animation 15s ease infinite;
+    color: white;
+}
+
+@keyframes gradient-animation {
+    0% {
+        background-position: 0% 50%;
+    }
+
+    50% {
+        background-position: 100% 50%;
+    }
+
+    100% {
+        background-position: 0% 50%;
+    }
+
+}
+
+.box1 {
+    margin-top: -94px !important;
+}
+
+.box-profile {
+    margin-top: 20% !important;
+}
+
+.img1 {
+    width: 250px !important;
+    position: absolute !important;
+    left: 75%;
+    top: -200px;
+}
+
+.h1 {
+    font-size: clamp(3.125rem, 6.25rem + -10vw, 0.625rem);
+    font-weight: bold;
+    margin-left: 50px;
+}
+
+.p1,
+.p2 {
+    margin-left: 60px;
+}
+
+.p1 {
+    font-size: 30px;
+}
+
+.p2 {
+    font-size: 18px;
+}
+
+a.active {
+    color: white;
+    border-bottom: 1px solid white;
+}
+
+a {
+    color: black;
+}
+
+a:hover {
+    color: white;
+    border-bottom: 1px solid white;
+    transition: 0.2s;
+}
+
+.box1,
+.box2,
+.box3 {
+    height: 100vh !important;
+}
+
+@keyframes gradient-animation {
+    0% {
+        background-position: 0% 50%;
+    }
+
+    50% {
+        background-position: 100% 50%;
+    }
+
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+.profile img {
+    border-radius: 50px;
+    background: #a39999;
+    box-shadow: 20px 20px 60px #8b8282,
+        -20px -20px 60px #bbb0b0;
+}
+
+.box2 {
+    text-align: center;
+}
+
+.box2 h1 {
+    font-size: 40px;
+    text-align: center;
+    font-weight: bold;
+}
+
+.box2 h2 {
+    font-size: 20px;
+    text-align: center;
+}
+
+.box2 p {
+    font-size: 20px;
+    text-align: center;
+    margin-top: 5%;
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
+.box3 {
+    text-align: center;
+}
+
+.box3 h1 {
+    font-size: 40px;
+    text-align: center;
+    font-weight: bold;
+}
+
+.box3 h2 {
+    font-size: 20px;
+    text-align: center;
+}
+
+.box3 p {
+    font-size: 20px;
+    text-align: center;
+    margin-top: 5%;
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
+.box2 ul {
+    margin-top: 3%;
+    list-style-type: none;
+    text-align: center;
+}
+
+.box2 ul li {
+    padding: 5px 5px;
+    border-radius: 5px;
+    display: inline;
+    font-size: 20px;
+    font-weight: bold;
+    background: linear-gradient(68deg, #2c8ce0, #4421e3, #9fec15, #428ce4, #2b3f01);
+    background-size: 300% 300%;
+    animation: gradient-animation 20s ease infinite;
+}
+
+@keyframes gradient-animation {
+    0% {
+        background-position: 0% 50%;
+    }
+
+    50% {
+        background-position: 100% 50%;
+    }
+
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+.skill-box {
+    margin-top: 100px;
+}
+
+.container {
+    background: rgba(255, 255, 255, 0.1);
+    -webkit-backdrop-filter: blur(5px);
+    backdrop-filter: blur(5px);
+    border: 1px solid rgba(255, 255, 255, 0.05);
+    border-radius: 10px;
+}
+
+.skill {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-gap: 1px;
+    padding: 10px 10px;
+}
+
+.logo {
+    width: 60px;
+}
+
+.footer {
+    margin-top: 100px;
+
+}
+
+#btn-contact {
+    margin-left: 60px;
+}
+
+@media screen and (max-width: 500px) {
+    .h1 {
+        margin-top: 50%;
+    }
+
+    .img1 {
+        width: 250px !important;
+        position: absolute !important;
+        margin-left: -250px;
+        top: 20px;
+    }
+
+    .container {
+        margin-left: 1px;
+        margin-right: 1px;
+    }
+}
+
+.loader {
+  --path: #fff;
+  --dot: rgb(0, 0, 0);
+  --duration: 3s;
+  width: 44px;
+  height: 44px;
+  position: relative;
+}
+
+.loader:before {
+  content: '';
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  position: absolute;
+  display: block;
+  background: var(--dot);
+  top: 37px;
+  left: 19px;
+  transform: translate(-18px, -18px);
+  animation: dotRect var(--duration) cubic-bezier(0.785, 0.135, 0.15, 0.86) infinite;
+}
+
+.loader svg {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+.loader svg rect, .loader svg polygon, .loader svg circle {
+  fill: none;
+  stroke: var(--path);
+  stroke-width: 10px;
+  stroke-linejoin: round;
+  stroke-linecap: round;
+}
+
+.loader svg polygon {
+  stroke-dasharray: 145 76 145 76;
+  stroke-dashoffset: 0;
+  animation: pathTriangle var(--duration) cubic-bezier(0.785, 0.135, 0.15, 0.86) infinite;
+}
+
+.loader svg rect {
+  stroke-dasharray: 192 64 192 64;
+  stroke-dashoffset: 0;
+  animation: pathRect 3s cubic-bezier(0.785, 0.135, 0.15, 0.86) infinite;
+}
+
+.loader svg circle {
+  stroke-dasharray: 150 50 150 50;
+  stroke-dashoffset: 75;
+  animation: pathCircle var(--duration) cubic-bezier(0.785, 0.135, 0.15, 0.86) infinite;
+}
+
+.loader.triangle {
+  width: 48px;
+}
+
+.loader.triangle:before {
+  left: 21px;
+  transform: translate(-10px, -18px);
+  animation: dotTriangle var(--duration) cubic-bezier(0.785, 0.135, 0.15, 0.86) infinite;
+}
+
+@keyframes pathTriangle {
+  33% {
+    stroke-dashoffset: 74;
+  }
+
+  66% {
+    stroke-dashoffset: 147;
+  }
+
+  100% {
+    stroke-dashoffset: 221;
+  }
+}
+
+@keyframes dotTriangle {
+  33% {
+    transform: translate(0, 0);
+  }
+
+  66% {
+    transform: translate(10px, -18px);
+  }
+
+  100% {
+    transform: translate(-10px, -18px);
+  }
+}
+
+@keyframes pathRect {
+  25% {
+    stroke-dashoffset: 64;
+  }
+
+  50% {
+    stroke-dashoffset: 128;
+  }
+
+  75% {
+    stroke-dashoffset: 192;
+  }
+
+  100% {
+    stroke-dashoffset: 256;
+  }
+}
+
+@keyframes dotRect {
+  25% {
+    transform: translate(0, 0);
+  }
+
+  50% {
+    transform: translate(18px, -18px);
+  }
+
+  75% {
+    transform: translate(0, -36px);
+  }
+
+  100% {
+    transform: translate(-18px, -18px);
+  }
+}
+
+@keyframes pathCircle {
+  25% {
+    stroke-dashoffset: 125;
+  }
+
+  50% {
+    stroke-dashoffset: 175;
+  }
+
+  75% {
+    stroke-dashoffset: 225;
+  }
+
+  100% {
+    stroke-dashoffset: 275;
+  }
+}
+
+.loader {
+  display: inline-block;
+  margin: 0 16px;
+}
+
+ 
+
+ 
