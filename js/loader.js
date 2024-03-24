@@ -1,4 +1,7 @@
-// Loader 
-$(window).load(function() {
-    $('#load').fadeOut(2500);
+
+$(document).ready(function(){
+    setTimeout(function(){
+        $("#loader").fadeOut();
+        $("#content").show();
+    }, 1500);
 });
